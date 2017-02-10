@@ -9,7 +9,7 @@ def read(file):
                     f.write('WOW, great moves ethan keep it up!\n')
 
         zip=zipfile.ZipFile(file[1],'w')
-        zip.write(file[0],compress_type=zipfile.ZIP_DEFLATED)
+        zip.write(arg.file[0],compress_type=zipfile.ZIP_DEFLATED)
         zip.close()
 
 def write(file):
